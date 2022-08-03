@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/alumno 
+
+###
+GET http://localhost:3000/alumno/4
+
+###
+POST http://localhost:3000/alumno 
+Content-Type: application/json
+
+{
+    "_id":5,
+    "nombre":"José",
+    "apellidos":"Luna",
+    "carrera":"Procesos Industriales",
+    "cuatrimestre":1,
+    "estatus":"aprobado",
+    "promedio":8.8
+}
+
+###
+DELETE http://localhost:3000/alumno/4
+
+###
+PUT http://localhost:3000/alumno/3
+Content-Type: application/json
+
+{
+    "cuatrimestre":4,
+    "estatus":"aprobado"
+}
